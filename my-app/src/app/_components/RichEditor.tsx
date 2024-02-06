@@ -10,3 +10,7 @@ const RichEditor = () => {
     </>
   );
 };
+
+export default dynamic(() => Promise.resolve(RichEditor), {
+  ssr: false,
+});
